@@ -25,11 +25,17 @@ repositories {
 	mavenCentral()
 }
 
-
+//spring-crypto-utils-1.4.0.jar
 dependencies {
 	compile('org.springframework.boot:spring-boot-devtools')
 	//compile('org.springframework.boot:spring-boot-starter-security')
 	compile('org.springframework.boot:spring-boot-starter-web')
+	
+	//spring
+	compile ('org.springframework:spring-context-support:4.2.5.RELEASE')
+	compile ('com.google.code.spring-crypto-utils:spring-crypto-utils:1.4.0')
+	
+	compile ('org.apache.commons:commons-lang3:3.4')
 	testCompile('org.springframework.boot:spring-boot-starter-test') 
 }
 

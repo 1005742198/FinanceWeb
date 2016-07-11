@@ -107,5 +107,5 @@
        <property name="preferredTestQuery"><value>select 1</value></property>
 	</bean>
 	<import resource="classpath:spring/spring-mvc.xml" />
-	<import resource="classpath:spring/spring-cache.xml" />
+	<!-- <import resource="classpath:spring/spring-cache.xml" /> -->
 </beans>

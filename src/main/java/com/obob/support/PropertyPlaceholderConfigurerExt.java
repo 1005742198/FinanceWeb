@@ -5,10 +5,10 @@ package com.obob.support;
 
 import java.util.Properties;
 
+import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.beans.factory.config.PropertyPlaceholderConfigurer;
-import org.springframework.util.StringUtils;
 
 import com.obob.encrypt.SymmetricEncrypt;
 
@@ -31,7 +31,7 @@ public class PropertyPlaceholderConfigurerExt extends
 		String url = props.getProperty(DbUrl);
 		String user = props.getProperty(DbUserKey);
 		String password = props.getProperty(DbPasswdKey);
-		if(StringUtils.is) {
+		if(StringUtils.isNotBlank(url)) {
 			props.setProperty(DbUrl, SymmetricEncrypt.decryptStr(url));
 		}
 		if(StringUtils.isNotBlank(user)) {

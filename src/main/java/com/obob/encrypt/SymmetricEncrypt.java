@@ -4,9 +4,12 @@ import java.security.NoSuchAlgorithmException;
 import java.security.NoSuchProviderException;
 
 import org.apache.tomcat.util.codec.binary.Base64;
-import org.springframework.boot.Banner.Mode;
 
 import com.obob.support.ConfigProperties;
+import com.springcryptoutils.core.cipher.Mode;
+import com.springcryptoutils.core.cipher.symmetric.Base64EncodedCipherer;
+import com.springcryptoutils.core.cipher.symmetric.Base64EncodedCiphererImpl;
+import com.springcryptoutils.core.cipher.symmetric.Base64EncodedKeyGeneratorImpl;
 
 /**
  * 对称加密解密
